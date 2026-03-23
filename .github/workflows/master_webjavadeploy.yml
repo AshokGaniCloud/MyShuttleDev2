@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read #This is required for actions/checkout
+      packages: write
+      id-token: write
+      security-events: write
+      actions: write
 
     steps:
       - uses: actions/checkout@v4
